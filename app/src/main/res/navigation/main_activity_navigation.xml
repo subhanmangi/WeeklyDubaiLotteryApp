@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.fridaydubailottery.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_fragment_to_previous_lotteries_fragment"
+            app:destination="@id/previous_lotteries_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_current_lottery_fragment"
+            app:destination="@id/current_lottery_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/current_lottery_fragment"
+        android:name="com.example.fridaydubailottery.fragment.CurrentLotteryFragment"
+        android:label="@string/current_lottery"
+        tools:layout="@layout/fragment_current_lottery" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/previous_lotteries_fragment"
+        android:name="com.example.fridaydubailottery.fragment.PreviousLotteriesFragment"
+        android:label="@string/previous_lottery"
+        tools:layout="@layout/fragment_previous_lotteries" >
+    </fragment>
+
+</navigation>

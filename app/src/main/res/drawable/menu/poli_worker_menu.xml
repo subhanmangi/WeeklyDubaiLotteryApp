@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/poli_worker_home_fragment"
+        android:title="@string/home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/citizen_polio_fragment"
+        android:title="@string/citizen"
+        android:icon="@drawable/ic_complain"/>
+
+    <item
+        android:id="@+id/poli_worker_profile_fragment"
+        android:title="@string/profile"
+        android:icon="@drawable/account_circle"/>
+
+</menu>

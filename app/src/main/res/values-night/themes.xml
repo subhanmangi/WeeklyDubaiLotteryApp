@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="Theme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="android:textAppearance">@style/CustomTextAppearance</item>
+        <item name="android:editTextStyle">@style/RobotoEditTextStyle</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAppearance">@style/CustomTextAppearance</item>
+        <item name="android:textColor">@color/subHeadingColor</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="@android:style/TextAppearance.Material">
+        <item name="android:textColor">@color/subHeadingColor</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/subHeadingColor</item>
+    </style>
+
+    <style name="RobotoEditTextStyle" parent="@android:style/TextAppearance.Material">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textCursorDrawable">@color/textColor</item>
+        <item name="android:textAppearance">@style/CustomTextAppearance</item>
+    </style>
+</resources>

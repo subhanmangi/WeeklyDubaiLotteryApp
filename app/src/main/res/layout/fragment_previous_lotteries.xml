@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/previous_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PreviousLotteriesFragment">
+
+  <TextView
+      android:id="@+id/tvPreviousDates"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:drawablePadding="20dp"
+      android:fontFamily="@font/roboto_bold"
+      android:text="Previous Lotteries Dates"
+      android:textColor="@color/white"
+      android:textSize="40dp"
+      android:textAlignment="center"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvDates"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="40dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+      app:spanCount="2"
+      app:layout_constraintTop_toBottomOf="@+id/tvPreviousDates"/>
+
+  <TextView
+      android:id="@+id/tvNoPreviousLotteries"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20dp"
+      android:textColor="@color/white"
+      android:fontFamily="@font/roboto_medium"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:visibility="gone"
+      app:layout_constraintRight_toRightOf="parent"
+      android:text="No Previous Lotteries"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

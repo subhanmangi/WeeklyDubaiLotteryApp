@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weekly Dubai Lottery</string>
+    <string name="sign_up_text">SIGN-UP FOR A NEW ACCOUNT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_lottery">Current Lottery</string>
+    <string name="previous_lottery">Previous Lottery</string>
+</resources>
